@@ -1,4 +1,4 @@
-import { readFileSync } from "fs";
+import { readFileSync } from 'fs';
 
 export interface Config {
   license: string;
@@ -6,7 +6,7 @@ export interface Config {
 
 function readConfig(): Config {
   const config: Config = JSON.parse(
-    readFileSync("./settings/config.json", "utf8")
+    readFileSync('./settings/config.json', 'utf8')
   );
   return config;
 }
